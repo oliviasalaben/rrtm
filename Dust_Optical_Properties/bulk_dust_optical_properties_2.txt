@@ -1,0 +1,3 @@
+Wavelength	Q_e_bulk_0W_18N_bulk	SSA_bulk_0W_18N_bulk	g_bulk_0W_18N_bulk	
+2.000	3.548	0.977	0.728
+2.000	3.456	0.989	0.729
