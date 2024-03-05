@@ -20,6 +20,8 @@
 *.tar
 *.zip
 *.nc
+*.aerosol
+*.clear
 
 # Logs and databases #
 ######################
