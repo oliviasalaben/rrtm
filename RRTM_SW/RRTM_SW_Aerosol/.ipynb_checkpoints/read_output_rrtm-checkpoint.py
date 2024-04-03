@@ -17,7 +17,7 @@ import fortranformat as ff
 
 def read_output_rrtm_funct(IMMAX, Rs, sza):
     #file = open(fname_sw_cl,'w+')	
-    data = np.array(pd.read_table('./rrtm_output/scat_OUTPUT_RRTM_sw_Rs{:}_sza{:}.clear'.format(Rs,sza),header=3,\
+    data = np.array(pd.read_table('./rrtm_output/abs_OUTPUT_RRTM_sw_Rs{:}_sza{:}.clear'.format(Rs,sza),header=3,\
             names=['a','b','c','d','e','f','g'], nrows=IMMAX, delim_whitespace=True)).astype(float) 
 
     # Variables we need for the plot
@@ -25,7 +25,7 @@ def read_output_rrtm_funct(IMMAX, Rs, sza):
     TOA_sw_cl_dwflux_bb = data[0,4]
     TOA_sw_cl_netflux_bb = data[0,5]
     #file = open(fname_sw_ae,'w+')	
-    data = np.array(pd.read_table('./rrtm_output/scat_OUTPUT_RRTM_sw_Rs{:}_sza{:}.aerosol'.format(Rs,sza),header=3,\
+    data = np.array(pd.read_table('./rrtm_output/abs_OUTPUT_RRTM_sw_Rs{:}_sza{:}.aerosol'.format(Rs,sza),header=3,\
             names=['a','b','c','d','e','f','g'], nrows=IMMAX, delim_whitespace=True)).astype(float)
     
     # Variables we need for the plot
