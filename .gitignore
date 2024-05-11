@@ -22,6 +22,8 @@
 *.nc
 *.aerosol
 *.clear
+*.hdf
+fetch_data.py
 
 # Logs and databases #
 ######################
