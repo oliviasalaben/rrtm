@@ -6,7 +6,7 @@ Module: write RRTM shortwave inputfile (INPUT_RRTM_sw)
 
 Created on 2019
 
-@author: Jianyu Zheng
+@author: Jianyu Zheng (Originally created by Zhibo using IDL, then coverted to Python by Jianyu)
 """
 
 import os 
@@ -25,7 +25,7 @@ def read_input_rrtm_sw(fname, IAER, ICLD, ISCAT, ISTRM, SZA, SEMISS, \
 	IATM  = 1   #  flag for RRTATM    1 = yes
 	#ISCAT = 0  #  switch for DISORT# =0 DISORT =1 two-stream
 	#ISTRM = 0  # 0: 4 stream 1: 8 streams
-	IOUT  = 98  #  # 0  only output is for 820-50000 cm-1.
+	IOUT  = 0 #98  #  # 0  only output is for 820-50000 cm-1.
 	#ICLD  = 0  #  flag for cloud =0 no cloud =1 has cloud layer(s)
 	IDELM = 1   #  flag for outputting downwelling fluxes computed using the delta-M scaling approximation# = 0  output "true" direct and diffuse downwelling fluxes
 	ICOS  = 0   # = 0 there is no need to account for instrumental cosine response
